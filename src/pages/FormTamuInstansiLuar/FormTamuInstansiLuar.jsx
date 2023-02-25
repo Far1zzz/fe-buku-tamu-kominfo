@@ -1,6 +1,7 @@
 import { Layout, Menu } from "antd";
-import React from "react";
+import React, { useEffect } from "react";
 import "../../assets/css/FormInstansiLuar.css";
+import Clock from "react-live-clock";
 
 const { Header, Content, Sider } = Layout;
 
@@ -133,7 +134,13 @@ const FormTamuInstansiLuar = () => {
                 }}
               >
                 <div>{result}</div>
-                <div style={{ backgroundColor: "black" }}>JAM</div>
+                <div style={{ backgroundColor: "black" }}>
+                  <Clock
+                    format={"HH:mm:ss"}
+                    ticking={true}
+                    timezone={"GMT+7"}
+                  />
+                </div>
               </Menu.Item>
             </Menu>
           </Sider>
