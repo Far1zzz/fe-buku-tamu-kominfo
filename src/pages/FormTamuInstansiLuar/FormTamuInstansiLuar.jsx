@@ -51,7 +51,7 @@ const FormTamuInstansiLuar = () => {
           boxShadow: "0px 4px 4px #ffffff",
         }}
       >
-        E-Buku Tamu
+        <h5>E-Buku</h5>
       </Header>
       <Content>
         <Layout>
@@ -157,11 +157,12 @@ const FormTamuInstansiLuar = () => {
                   borderRadius: 0,
                   height: "100%",
                   width: "100%",
-                  margin: "0 0 5px 0",
+                  margin: "53px 0 0 0",
                   color: "#EA2626",
                   fontFamily: "Poppins",
                   fontStyle: "normal",
                   fontWeight: 700,
+                  fontSize: "15px",
                   padding: 0,
                   textAlign: "center",
                 }}
@@ -175,12 +176,7 @@ const FormTamuInstansiLuar = () => {
                   }}
                 >
                   <div className="lingkaran">
-                    <Clock
-                      format={"HH:mm:ss"}
-                      ticking={true}
-                      timezone={"GMT+7"}
-                      className="jam"
-                    />
+                    <Clock format={"HH:mm:ss"} ticking={true} className="jam" />
                   </div>
                 </div>
               </Menu.Item>

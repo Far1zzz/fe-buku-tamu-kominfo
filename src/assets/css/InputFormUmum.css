@@ -11,6 +11,38 @@
   border-radius: 15px;
   height: 100%;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-input-umum {
+  margin-left: 85px;
+  font-size: 25px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  right: 250px;
+  top: 750px;
+  /* margin: 100px 290px 0px 0px; */
+  gap: 10px;
+}
+
+.footer button {
+  padding: 5px;
+  border: none;
+  background-color: #29d4c0;
+  font-size: 12px;
+  font-weight: 800;
+  color: white;
+  border-radius: 10px;
+  width: 70px;
 }
 
 .input-umum {
@@ -21,16 +53,16 @@
   justify-content: center;
   align-items: center;
   border: 1px solid white;
-  border-radius: 47px;
+  border-radius: 10px;
 }
 .input-umum-more {
   margin-top: 5px;
   padding: 7px;
   display: flex;
   width: 75%;
-  height: 100%;
+  height: 25%;
   border: 1px solid white;
-  border-radius: 11px;
+  border-radius: 10px;
 }
 
 .input-umum-more textarea {
@@ -38,7 +70,7 @@
   height: 100%;
   color: black;
   padding: 5px 10px;
-  border-radius: 11px;
+  border-radius: 10px;
   border: none;
   font-size: 14px;
   resize: none;
@@ -48,7 +80,8 @@
   height: 100%;
   color: black;
   padding: 5px 10px;
-  border-radius: 70px;
+  border-radius: 10px;
+  position: relative;
   justify-content: center;
   align-items: center;
   border: none;
@@ -61,7 +94,40 @@
 .input-umum-more :focus {
   outline: 0;
 }
-
-.label-title label {
-  padding-left: 5px;
+.label-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.label-title label {
+  width: 80%;
+  margin-top: 20px;
+  position: relative;
+  left: 20px;
+}
+
+/* .button-form {
+  margin: 0px 270px 0px 0px;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+} */
+
+.button-prev,
+.button-next-submit {
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid white;
+}
+
+/* .button-prev button,
+.button-next-submit button {
+  padding: 5px;
+  border: none;
+  background-color: #29d4c0;
+  font-size: 12px;
+  font-weight: 800;
+  color: white;
+  border-radius: 10px;
+  width: 70px;
+} */

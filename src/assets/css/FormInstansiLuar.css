@@ -11,10 +11,16 @@
     #ae1d1d 0%,
     #4e2222 100%
   ) !important;
+  display: flex;
+  align-items: center;
+}
+
+.header-buku-tamu h5 {
   font-size: 30px;
   font-style: italic;
   font-weight: 800;
   position: relative;
+  left: -30px;
 }
 
 .content {
@@ -24,11 +30,7 @@
 }
 
 .content-form {
-  background: linear-gradient(
-    270deg,
-    #ea2626 70.24%,
-    rgba(255, 245, 6, 0.26) 190.07%
-  );
+  background: linear-gradient(270deg, #ea2626 7.4%, #ffffff 74.08%);
 }
 
 .item-menu {
