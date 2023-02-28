@@ -6,21 +6,31 @@
 }
 
 .header-buku-tamu {
-  background: radial-gradient(
-    96.83% 12280.84% at 3.17% 50%,
-    #ae1d1d 0%,
-    #4e2222 100%
-  ) !important;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-.header-buku-tamu h5 {
+.title-header h5 {
   font-size: 30px;
   font-style: italic;
   font-weight: 800;
   position: relative;
   left: -30px;
+}
+
+.icon-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.icon-header img {
+  height: 50px;
 }
 
 .content {
@@ -41,52 +51,59 @@
   border-radius: 0;
 }
 
-.hari-ini {
-  font-weight: 500;
+.menu-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 7.5px;
+  font-family: "Poppins";
 }
-.hari-ini span {
-  font-weight: 700;
 
-  border-radius: 70px;
-  width: 80px;
-  height: fit-content;
-  position: relative;
-  text-align: center;
+.menu-item i {
+  font-size: 18px;
 }
-.bulan-ini {
+
+.format-tanggal {
   font-weight: 500;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.bulan-ini span {
-  font-weight: 700;
-  border-radius: 70px;
-  width: 80px;
-  height: fit-content;
-  position: relative;
-  text-align: center;
-}
-.total-pengunjung {
-  font-weight: 500;
+
+.format-tanggal i {
+  font-style: normal;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 10px;
+  font-weight: 500;
 }
-.total-pengunjung span {
-  font-weight: 700;
+
+.format-tanggal span {
+  font-weight: 500;
   border-radius: 70px;
   width: 80px;
   height: fit-content;
   position: relative;
   text-align: center;
+}
+
+.garis hr {
+  border: 1.5px solid white;
+  background-color: white;
+  width: 100%;
+}
+
+.tanggal-hari-ini {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.tanggal-hari-ini i {
+  font-size: 20px;
 }
 
 .lingkaran {
-  height: 225px;
+  height: 261px;
   width: 100%;
   border: 11px solid #ffffff;
   border-radius: 50%;
@@ -98,5 +115,7 @@
 .jam {
   position: relative;
   font-size: 45px;
-  padding: 10px;
+  padding: 5px;
+  font-family: "DS-DIGI";
+  src: url("../font/DS-DIGI.TTF");
 }

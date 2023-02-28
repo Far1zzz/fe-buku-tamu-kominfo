@@ -3,6 +3,9 @@ import React from "react";
 import "../../assets/css/FormInstansiLuar.css";
 import Clock from "react-live-clock";
 import InputFormInstansiLuar from "../../components/InputFormInstansiLuar/InputFormInstansiLuar";
+import BanyuasinBangkit from "../../assets/icons/BanyuasinBangkit.png";
+import Gerakan from "../../assets/icons/12gerakan.png";
+import Program from "../../assets/icons/7program.png";
 
 const { Header, Content, Sider } = Layout;
 
@@ -44,19 +47,28 @@ const FormTamuInstansiLuar = () => {
   return (
     <Layout style={{ color: "white" }}>
       <Header
-        className="header-buku-tamu"
         style={{
           color: "white",
-          backgroundBlendMode: "darken",
           boxShadow: "0px 4px 4px #ffffff",
+          background:
+            "radial-gradient(96.83% 12280.84% at 3.17% 50%, #AE1D1D 0%, #4E2222 100%)",
         }}
       >
-        <h5>E-Buku</h5>
+        <div className="header-buku-tamu">
+          <div className="title-header">
+            <h5>E-Buku</h5>
+          </div>
+          <div className="icon-header">
+            <img src={Gerakan} alt="" />
+            <img src={Program} alt="" />
+            <img src={BanyuasinBangkit} alt="" />
+          </div>
+        </div>
       </Header>
       <Content>
         <Layout>
           <Sider
-            width={250}
+            width={300}
             style={{
               height: "100%",
               backgroundColor: "#4E2222",
@@ -66,7 +78,7 @@ const FormTamuInstansiLuar = () => {
               style={{
                 background: "#4E2222",
                 color: "white",
-                padding: "50px 0 0 0",
+                padding: "40px 0 0 0",
               }}
             >
               <Menu.Item
@@ -76,12 +88,13 @@ const FormTamuInstansiLuar = () => {
                   borderRadius: 0,
                   width: "100%",
                   margin: "0 0 18px 0",
-                  fontFamily: "Poppins",
-                  fontWeight: 500,
                   fontSize: "17px",
                 }}
               >
-                <i class="bi bi-houses"></i> <b>Menu</b>
+                <div className="menu-item">
+                  <i class="bi bi-house-fill"></i>
+                  <b>Menu</b>
+                </div>{" "}
               </Menu.Item>
               <Menu.Item
                 style={{
@@ -92,7 +105,10 @@ const FormTamuInstansiLuar = () => {
                     "radial-gradient(96.83% 12280.84% at 3.17% 50%, #EA2626 0%, rgba(255, 255, 255, 0) 100%)",
                 }}
               >
-                <i class="bi bi-circle-fill"></i> <b>Visi dan Misi</b>
+                <div className="menu-item">
+                  <i class="bi bi-circle-fill"></i>
+                  <b>Visi dan Misi</b>
+                </div>{" "}
               </Menu.Item>
               <Menu.Item
                 style={{
@@ -103,7 +119,10 @@ const FormTamuInstansiLuar = () => {
                     "radial-gradient(96.83% 12280.84% at 3.17% 50%, #EA2626 0%, rgba(255, 255, 255, 0) 100%)",
                 }}
               >
-                <i class="bi bi-circle-fill"></i> <b>7 Program Prioritas</b>
+                <div className="menu-item">
+                  <i class="bi bi-circle-fill"></i>
+                  <b>7 Program Prioritas</b>
+                </div>
               </Menu.Item>
               <Menu.Item
                 style={{
@@ -114,8 +133,10 @@ const FormTamuInstansiLuar = () => {
                     "radial-gradient(96.83% 12280.84% at 3.17% 50%, #EA2626 0%, rgba(255, 255, 255, 0) 100%)",
                 }}
               >
-                <i class="bi bi-circle-fill"></i>{" "}
-                <b>12 Gerakan Bersama Masyarakat</b>
+                <div className="menu-item">
+                  <i class="bi bi-circle-fill"></i>
+                  <b>12 Gerakan Bersama Masyarakat</b>
+                </div>
               </Menu.Item>
 
               <Menu.Item
@@ -127,7 +148,10 @@ const FormTamuInstansiLuar = () => {
                   margin: "0 0 16px 0",
                 }}
               >
-                JUMLAH PENGUNJUNG
+                <div className="menu-item">
+                  <i class="bi bi-graph-up"></i>
+                  <b>JUMLAH PENGUNJUNG</b>
+                </div>{" "}
               </Menu.Item>
               <Menu.Item
                 style={{
@@ -139,15 +163,20 @@ const FormTamuInstansiLuar = () => {
                   margin: "0 0 16px 0",
                 }}
               >
-                <div className="hari-ini">
-                  Hari ini <span> 2 Orang</span>
+                <div className="format-tanggal">
+                  <i class="bi bi-calendar-week">Hari ini</i>
+                  <span> 2 Orang</span>
                 </div>
-                <div className="bulan-ini">
-                  Bulan Ini <span>10 Orang</span>
+                <div className="format-tanggal">
+                  <i class="bi bi-calendar3">Bulan Ini </i>
+                  <span>10 Orang</span>
                 </div>
-                <hr style={{ width: "100%" }} />
-                <div className="total-pengunjung">
-                  Total <span>12 orang</span>
+                <div className="garis">
+                  <hr />
+                </div>
+                <div className="format-tanggal">
+                  <i class="bi bi-bar-chart-line">Total</i>
+                  <span>12 orang</span>
                 </div>
               </Menu.Item>
               <Menu.Item
@@ -157,7 +186,7 @@ const FormTamuInstansiLuar = () => {
                   borderRadius: 0,
                   height: "100%",
                   width: "100%",
-                  margin: "53px 0 0 0",
+                  margin: "25px 0 0 0",
                   color: "#EA2626",
                   fontFamily: "Poppins",
                   fontStyle: "normal",
@@ -167,7 +196,10 @@ const FormTamuInstansiLuar = () => {
                   textAlign: "center",
                 }}
               >
-                <div>{result}</div>
+                <div className="tanggal-hari-ini">
+                  <i class="bi bi-calendar3"></i>
+                  {result}
+                </div>
                 <div
                   style={{
                     backgroundColor: "#EA2626",
