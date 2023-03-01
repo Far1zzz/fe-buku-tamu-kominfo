@@ -26,3 +26,43 @@
   height: 100%;
   width: 100%;
 }
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.click-visi-misi {
+  animation: blinker 2.5s linear infinite;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  top: 2.5%;
+  left: 82%;
+  color: red;
+}
+
+.click {
+  animation: blinker 2.5s linear infinite;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  top: 90%;
+  left: 80%;
+  color: red;
+}

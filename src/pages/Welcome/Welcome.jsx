@@ -11,7 +11,9 @@ const Welcome = () => {
         navigate("/video");
       }}
       className="bg-welcome"
-    ></div>
+    >
+      <div className="click">KLIK DIMANA SAJA</div>
+    </div>
   );
 };
 

@@ -11,7 +11,9 @@ const VisiMisi = () => {
         navigate("/profil-dinas");
       }}
       className="bg-visi-misi"
-    ></div>
+    >
+      <div className="click-visi-misi">KLIK DIMANA SAJA</div>
+    </div>
   );
 };
 

@@ -10,7 +10,9 @@ const ProfilDinas = () => {
         navigate("/asal");
       }}
       className="bg-profil-dinas"
-    ></div>
+    >
+      <div className="click-visi-misi">KLIK DIMANA SAJA</div>
+    </div>
   );
 };
 
