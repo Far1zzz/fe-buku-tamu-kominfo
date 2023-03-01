@@ -28,8 +28,8 @@
   display: flex;
   justify-content: end;
   position: absolute;
-  right: 250px;
-  top: 750px;
+  right: 225px;
+  top: 775px;
   /* margin: 100px 290px 0px 0px; */
   gap: 10px;
 }
@@ -41,8 +41,8 @@
   font-size: 12px;
   font-weight: 800;
   color: white;
-  border-radius: 10px;
-  width: 70px;
+  border-radius: 7.5px;
+  width: 85px;
 }
 
 .input-umum {
@@ -118,6 +118,11 @@
   border-radius: 10px;
   padding: 5px;
   border: 1px solid white;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
 }
 
 /* .button-prev button,

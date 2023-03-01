@@ -4,7 +4,7 @@ import FormUmum from "../FormUmum/FormUmum";
 import WebcamUmum from "../WebcamUmum/WebcamUmum";
 
 const InputFormInstansiLuar = () => {
-  const FormTitle = ["Ambil Foto", "Silahkan Isi Data Diri Anda"];
+  const FormTitle = ["Silahkan Ambil Foto", "Silahkan Isi Data Diri Anda"];
   const [page, setPage] = useState(0);
 
   const [formData, setFormData] = useState({

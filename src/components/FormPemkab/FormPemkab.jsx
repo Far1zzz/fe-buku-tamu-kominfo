@@ -60,72 +60,248 @@ const FormPemkab = ({ formData, setFormData }) => {
                     label: "Asn",
                   },
                   {
-                    value: "Non Asn(Honorer)",
-                    label: "Non Asn(Honorer)",
-                  },
-                  {
-                    value: "Lainnya",
-                    label: "Lainnya",
+                    value: "Non Asn",
+                    label: "Non Asn",
                   },
                 ]}
               />
             </div>
-            {hideStatus === "Lainnya" && (
-              <div className="input-umum mt-3">
-                <input
-                  type="text"
-                  placeholder="Silahkan Input"
-                  // value={formData.nama}
-                  onChange={(e) => {
-                    // setFormData({ ...formData, nama: e.target.value });
-                  }}
-                />
-              </div>
-            )}
+
             <label htmlFor="">
-              Alamat/Asal Instansi<small>*(Wajib Diisi)</small>
+              Asal Instansi<small>*(Wajib Diisi)</small>
             </label>
-            <div className="input-umum-more">
-              <textarea
+            <div className="input-umum">
+              <Select
+                onChange={(value) => {
+                  setFormData({ ...formData, statusPegawai: value });
+                  setShowHide(value);
+                  setHideStatus(value);
+                }}
+                defaultValue="......"
+                style={{
+                  width: "100%",
+                  borderRadius: "10px",
+                  backgroundColor: "white",
+                }}
+                bordered={false}
+                options={[
+                  {
+                    value: "Sekretariat Daerah",
+                    label: "Sekretariat Daerah",
+                  },
+                  {
+                    value: "Sekretariat DPR",
+                    label: "Sekretariat DPR",
+                  },
+                  {
+                    value: "Diskominfo-SP",
+                    label: "Diskominfo-SP",
+                  },
+
+                  {
+                    value: "Irkap Banyuasin",
+                    label: "Irkap Banyuasin",
+                  },
+                  {
+                    value: "BPBD KESBANGPOL",
+                    label: "BPBD KESBANGPOL",
+                  },
+                  {
+                    value: "Badan Pendapatan Daerah",
+                    label: "Badan Pendapatan Daerah",
+                  },
+                  {
+                    value: "BPKAD Banyuasin",
+                    label: "BPKAD Banyuasin",
+                  },
+                  {
+                    value: "Setwan Banyuasin",
+                    label: "Setwan Banyuasin",
+                  },
+                  {
+                    value: "Bapedda & Litbang",
+                    label: "Bapedda & Litbang",
+                  },
+                  {
+                    value: "Dinas Perhubungan",
+                    label: "Dinas Perhubungan",
+                  },
+                  {
+                    value: "Dinas Perizinan",
+                    label: "Dinas Perizinan",
+                  },
+                  {
+                    value: "Dinas Sosial",
+                    label: "Dinas Sosial",
+                  },
+                  {
+                    value: "Inspektorat Kabupaten",
+                    label: "Inspektorat Kabupaten",
+                  },
+                  {
+                    value: "Dinas Tanaman Pangan dan Holtikultura",
+                    label: "Dinas Tanaman Pangan dan Holtikultura",
+                  },
+                  {
+                    value: "Dinas Pertanian",
+                    label: "Dinas Pertanian",
+                  },
+                  {
+                    value: "BKPSDM",
+                    label: "BKPSDM",
+                  },
+                  {
+                    value: "Dinas PU dan Tata Ruang",
+                    label: "Dinas PU dan Tata Ruang",
+                  },
+                  {
+                    value: "Dinas Disperkimtan",
+                    label: "Dinas Disperkimtan",
+                  },
+                  {
+                    value: "BPKAD",
+                    label: "BPKAD",
+                  },
+                  {
+                    value: "Dinas Ksehatan",
+                    label: "Dinas Ksehatan",
+                  },
+
+                  {
+                    value: "Dinas Pendidikan Pemuda Olahraga dan Pariwisata",
+                    label: "Dinas Pendidikan Pemuda Olahraga dan Pariwisata",
+                  },
+                  {
+                    value: "Satpol PP & Damkar",
+                    label: "Satpol PP & Damkar",
+                  },
+                  {
+                    value: "Dinas Pertahanan Pangan",
+                    label: "Dinas Pertahanan Pangan",
+                  },
+                  {
+                    value: "Dinas Lingkungan Hidup",
+                    label: "Dinas Lingkungan Hidup",
+                  },
+                  {
+                    value: "Dinas Kependudukan dan Pencatatan Sipil",
+                    label: "Dinas Kependudukan dan Pencatatan Sipil",
+                  },
+                  {
+                    value: "Kecamatan Air Kumbang",
+                    label: "Kecamatan Air Kumbang",
+                  },
+
+                  {
+                    value: "Kecamatan Air Saleh",
+                    label: "Kecamatan Air Saleh",
+                  },
+                  {
+                    value: "Kecamatan Banyuasin I",
+                    label: "Kecamatan Banyuasin I",
+                  },
+                  {
+                    value: "Kecamatan Banyuasin II",
+                    label: "Kecamatan Banyuasin II",
+                  },
+                  {
+                    value: "Kecamatan Banyuasin III",
+                    label: "Kecamatan Banyuasin III",
+                  },
+                  {
+                    value: "Kecamatan Betung",
+                    label: "Kecamatan Betung",
+                  },
+                  {
+                    value: "Kecamatan Karang Agung Ilir",
+                    label: "Kecamatan Karang Agung Ilir",
+                  },
+                  {
+                    value: "Kecamatan Makarti Jaya",
+                    label: "Kecamatan Makarti Jaya",
+                  },
+                  {
+                    value: "Kecamatan Muara Padang",
+                    label: "Kecamatan Muara Padang",
+                  },
+                  {
+                    value: "Kecamatan Muara Sugihan",
+                    label: "Kecamatan Muara Sugihan",
+                  },
+                  {
+                    value: "Kecamatan Muara Telang",
+                    label: "Kecamatan Muara Telang",
+                  },
+                  {
+                    value: "Kecamatan Pulau Rimau",
+                    label: "Kecamatan Pulau Rimau",
+                  },
+                  {
+                    value: "Kecamatan Rambutan",
+                    label: "Kecamatan Rambutan",
+                  },
+                  {
+                    value: "Kecamatan Rantau Bayur",
+                    label: "Kecamatan Rantau Bayur",
+                  },
+                  {
+                    value: "Kecamatan Sembawa",
+                    label: "Kecamatan Sembawa",
+                  },
+                  {
+                    value: "Kecamatan Selat Penungguan",
+                    label: "Kecamatan Selat Penungguan",
+                  },
+                  {
+                    value: "Kecamatan Suak Tapeh",
+                    label: "Kecamatan Suak Tapeh",
+                  },
+                  {
+                    value: "Kecamatan Sumber Marga Telang",
+                    label: "Kecamatan Sumber Marga Telang",
+                  },
+                  {
+                    value: "Kecamatan Talang Kelapa",
+                    label: "Kecamatan Talang Kelapa",
+                  },
+                  {
+                    value: "Kecamatan Tanjung Lago",
+                    label: "Kecamatan Tanjung Lago",
+                  },
+                  {
+                    value: "Kecamatan Tungkal Ilir",
+                    label: "Kecamatan Tungkal Ilir",
+                  },
+                ]}
+              />
+            </div>
+            <label htmlFor="">
+              Bidang<small>*(Wajib Diisi)</small>
+            </label>
+            <div className="input-umum">
+              <input
                 type="text"
                 placeholder="Silahkan Input"
-                value={formData.alamat}
+                value={formData.bidang}
                 onChange={(e) => {
-                  setFormData({ ...formData, alamat: e.target.value });
+                  setFormData({ ...formData, bidang: e.target.value });
                 }}
               />
             </div>
-            {showHide === "Asn" || showHide === "Non Asn(Honorer)" ? (
-              <>
-                <label htmlFor="">
-                  Bidang<small>*(Wajib Diisi)</small>
-                </label>
-                <div className="input-umum">
-                  <input
-                    type="text"
-                    placeholder="Silahkan Input"
-                    value={formData.bidang}
-                    onChange={(e) => {
-                      setFormData({ ...formData, bidang: e.target.value });
-                    }}
-                  />
-                </div>
 
-                <label htmlFor="">
-                  Jabatan<small>*(Wajib Diisi)</small>
-                </label>
-                <div className="input-umum">
-                  <input
-                    type="text"
-                    placeholder="Silahkan Input"
-                    value={formData.jabatan}
-                    onChange={(e) => {
-                      setFormData({ ...formData, jabatan: e.target.value });
-                    }}
-                  />
-                </div>
-              </>
-            ) : null}
+            <label htmlFor="">
+              Jabatan<small>*(Wajib Diisi)</small>
+            </label>
+            <div className="input-umum">
+              <input
+                type="text"
+                placeholder="Silahkan Input"
+                value={formData.jabatan}
+                onChange={(e) => {
+                  setFormData({ ...formData, jabatan: e.target.value });
+                }}
+              />
+            </div>
           </div>
           <div className="col-lg-6 label-title">
             <label htmlFor="">

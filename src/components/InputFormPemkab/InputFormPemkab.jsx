@@ -4,7 +4,7 @@ import FormPemkab from "../FormPemkab/FormPemkab";
 import WebcamPemkab from "../WebcamPemkab/WebcamPemkab";
 
 const InputFormPemkab = () => {
-  const FormTitle = ["Ambil Foto", "Silahkan Isi Data Diri Anda"];
+  const FormTitle = ["Silahkan Ambil Foto", "Silahkan Isi Data Diri Anda"];
   const [page, setPage] = useState(0);
 
   const [formData, setFormData] = useState({

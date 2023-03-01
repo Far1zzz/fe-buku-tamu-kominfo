@@ -1,12 +1,17 @@
 .webcam-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  width: 85%;
+  height: 100%;
   padding: 20px;
   border: 1px solid white;
   border-radius: 20px;
-  margin: 0 250px 0 250px;
+}
+
+.hasil-foto {
+  border-radius: 10px;
 }
 
 .button-webcam {

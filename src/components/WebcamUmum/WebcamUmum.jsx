@@ -3,8 +3,8 @@ import Webcam from "react-webcam";
 import "../../assets/css/WebcamUmum.css";
 
 const videoConstraints = {
-  width: "500px",
-  height: "490px",
+  width: "100%",
+  height: "100%",
   facingMode: "user",
 };
 
@@ -32,11 +32,11 @@ const WebcamUmum = ({ formData, setFormData }) => {
               audio={false}
               ref={webcamRef}
               screenshotFormat="image/jpeg"
-              style={{ borderRadius: "10px" }}
+              style={{ borderRadius: "10px", width: "850px" }}
               videoConstraints={videoConstraints}
             />
           ) : (
-            <img src={image} alt="none" />
+            <img className="hasil-foto" src={image} alt="none" />
           )}
         </div>
         <br />

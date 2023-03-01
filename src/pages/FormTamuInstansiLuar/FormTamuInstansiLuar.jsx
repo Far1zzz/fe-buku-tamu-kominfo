@@ -205,6 +205,9 @@ const FormTamuInstansiLuar = () => {
                     backgroundColor: "#EA2626",
                     color: "white",
                     padding: "10px",
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
                   }}
                 >
                   <div className="lingkaran">

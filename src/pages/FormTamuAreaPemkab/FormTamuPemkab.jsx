@@ -206,6 +206,8 @@ const FormTamuPemkab = () => {
                     backgroundColor: "#EA2626",
                     color: "white",
                     padding: "10px",
+                    display: "flex",
+                    justifyContent: "center",
                   }}
                 >
                   <div className="lingkaran">

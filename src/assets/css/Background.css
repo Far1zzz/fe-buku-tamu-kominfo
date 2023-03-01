@@ -1,0 +1,28 @@
+.bg-welcome {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/welcome-page.png);
+}
+
+.bg-visi-misi {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/Visi-Misi.png);
+}
+
+.bg-profil-dinas {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/Profil-dinas.png);
+}
+
+.bg-vid {
+  height: 100%;
+  width: 100%;
+}

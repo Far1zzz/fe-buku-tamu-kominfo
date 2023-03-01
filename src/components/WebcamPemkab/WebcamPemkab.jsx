@@ -31,7 +31,7 @@ const WebcamPemkab = ({ formData, setFormData }) => {
               audio={false}
               ref={webcamRef}
               screenshotFormat="image/jpeg"
-              style={{ borderRadius: "10px" }}
+              style={{ borderRadius: "10px", width: "850px" }}
               videoConstraints={videoConstraints}
             />
           ) : (
