@@ -6,7 +6,7 @@
   width: 85%;
   height: 100%;
   padding: 20px;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 20px;
 }
 
@@ -15,9 +15,9 @@
 }
 
 .button-webcam {
-  border: 1px solid black;
+  border: 2px solid white;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .button-webcam button {

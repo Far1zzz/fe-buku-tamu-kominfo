@@ -25,7 +25,10 @@ const Modal7ProgramPrioritas = ({ children }) => {
           footer={null}
         >
           <div className="content-modal">
-            <img src={Program} alt="none" />
+            <img
+              src="https://cdn.discordapp.com/attachments/1080330995624067122/1082145952971882506/7_PROGRAM.png"
+              alt="none"
+            />
           </div>
         </Modal>
       </div>

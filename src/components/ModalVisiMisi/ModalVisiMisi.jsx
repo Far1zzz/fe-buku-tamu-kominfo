@@ -1,6 +1,7 @@
 import React from "react";
 import { Modal } from "antd";
 import { useState } from "react";
+import VisiMisi from "../../assets/img/Visi-Misi.png";
 
 const ModalVisiMisi = ({ children }) => {
   const [open, setOpen] = useState(false);
@@ -24,10 +25,7 @@ const ModalVisiMisi = ({ children }) => {
           footer={null}
         >
           <div className="content-modal">
-            <img
-              src="https://cdn.discordapp.com/attachments/1080330995624067122/1082145952971882506/7_PROGRAM.png"
-              alt="none"
-            />
+            <img src={VisiMisi} alt="none" />
           </div>
         </Modal>
       </div>

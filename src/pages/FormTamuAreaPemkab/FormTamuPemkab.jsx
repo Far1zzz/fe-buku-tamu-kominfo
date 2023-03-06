@@ -72,6 +72,7 @@ const FormTamuPemkab = () => {
       <Content>
         <Layout>
           <Sider
+            className="slider-content"
             width={300}
             style={{
               height: "100%",

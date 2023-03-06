@@ -25,7 +25,10 @@ const Modal12Gerakan = ({ children }) => {
           footer={null}
         >
           <div className="content-modal">
-            <img src={Gerakan} alt="none" />
+            <img
+              src="https://media.discordapp.net/attachments/1080330995624067122/1082169530773688340/12_GERAKAN_BERSAMA_MASYARAKAT.png?width=892&height=595"
+              alt="none"
+            />
           </div>
         </Modal>
       </div>

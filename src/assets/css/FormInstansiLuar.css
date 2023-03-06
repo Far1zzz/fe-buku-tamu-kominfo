@@ -117,3 +117,7 @@
   font-size: 45px;
   padding: 5px;
 }
+
+.slider-content .ant-menu-light .ant-menu-item-selected {
+  color: white;
+}

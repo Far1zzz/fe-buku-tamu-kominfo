@@ -12,13 +12,17 @@
 .modal-content .ant-modal-close-x {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
-  top: -10px;
-  left: 10px;
+  top: -30px;
+  left: 20px;
   color: black;
   background-color: white;
-  border-radius: 25%;
-  padding: 4px;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+
+  padding: 5px;
 }
 
 .content-modal {
