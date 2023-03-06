@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const ProfilDinas = () => {
   const navigate = useNavigate();
+  const [state, setState] = useState();
   return (
     <div
       onClick={(e) => {

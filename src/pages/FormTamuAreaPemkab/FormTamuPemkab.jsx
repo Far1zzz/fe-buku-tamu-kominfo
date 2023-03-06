@@ -2,11 +2,14 @@ import { Layout, Menu } from "antd";
 import React from "react";
 import "../../assets/css/FormInstansiLuar.css";
 import Clock from "react-live-clock";
-import InputFormInstansiLuar from "../../components/InputFormInstansiLuar/InputFormInstansiLuar";
 import BanyuasinBangkit from "../../assets/icons/BanyuasinBangkit.png";
 import Gerakan from "../../assets/icons/12gerakan.png";
 import Program from "../../assets/icons/7program.png";
+import "../../assets/css/ModalContent.css";
 import InputFormPemkab from "../../components/InputFormPemkab/InputFormPemkab";
+import ModalVisiMisi from "../../components/ModalVisiMisi/ModalVisiMisi";
+import Modal7ProgramPrioritas from "../../components/Modal7ProgramPrioritas/Modal7ProgramPrioritas";
+import Modal12Gerakan from "../../components/Modal12Gerakan/Modal12Gerakan";
 
 const { Header, Content, Sider } = Layout;
 
@@ -106,10 +109,13 @@ const FormTamuPemkab = () => {
                     "radial-gradient(96.83% 12280.84% at 3.17% 50%, #EA2626 0%, rgba(255, 255, 255, 0) 100%)",
                 }}
               >
-                <div className="menu-item">
-                  <i class="bi bi-circle-fill"></i>
-                  <b>Visi dan Misi</b>
-                </div>{" "}
+                <ModalVisiMisi>
+                  {" "}
+                  <div className="menu-item">
+                    <i class="bi bi-circle-fill"></i>
+                    <b>Visi dan Misi</b>
+                  </div>{" "}
+                </ModalVisiMisi>
               </Menu.Item>
               <Menu.Item
                 style={{
@@ -120,10 +126,12 @@ const FormTamuPemkab = () => {
                     "radial-gradient(96.83% 12280.84% at 3.17% 50%, #EA2626 0%, rgba(255, 255, 255, 0) 100%)",
                 }}
               >
-                <div className="menu-item">
-                  <i class="bi bi-circle-fill"></i>
-                  <b>7 Program Prioritas</b>
-                </div>
+                <Modal7ProgramPrioritas>
+                  <div className="menu-item">
+                    <i class="bi bi-circle-fill"></i>
+                    <b>7 Program Prioritas</b>
+                  </div>
+                </Modal7ProgramPrioritas>
               </Menu.Item>
               <Menu.Item
                 style={{
@@ -134,10 +142,12 @@ const FormTamuPemkab = () => {
                     "radial-gradient(96.83% 12280.84% at 3.17% 50%, #EA2626 0%, rgba(255, 255, 255, 0) 100%)",
                 }}
               >
-                <div className="menu-item">
-                  <i class="bi bi-circle-fill"></i>
-                  <b>12 Gerakan Bersama Masyarakat</b>
-                </div>
+                <Modal12Gerakan>
+                  <div className="menu-item">
+                    <i class="bi bi-circle-fill"></i>
+                    <b>12 Gerakan Bersama Masyarakat</b>
+                  </div>
+                </Modal12Gerakan>
               </Menu.Item>
 
               <Menu.Item
