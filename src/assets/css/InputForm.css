@@ -26,12 +26,12 @@
 
 .footer {
   display: flex;
-  justify-content: end;
+  justify-content: space-around;
   position: absolute;
-  right: 225px;
+  right: 135px;
   top: 775px;
+  width: 25%;
   /* margin: 100px 290px 0px 0px; */
-  gap: 10px;
 }
 
 .footer button {
@@ -55,6 +55,12 @@
   border: 2px solid white;
   border-radius: 10px;
 }
+
+.input-umum .ant-select-arrow {
+  color: black;
+  font-size: 15px;
+}
+
 .input-umum-more {
   margin-top: 5px;
   padding: 7px;

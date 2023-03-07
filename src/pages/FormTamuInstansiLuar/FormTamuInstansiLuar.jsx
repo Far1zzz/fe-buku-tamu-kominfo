@@ -1,6 +1,6 @@
 import { Layout, Menu } from "antd";
 import React from "react";
-import "../../assets/css/FormInstansiLuar.css";
+import "../../assets/css/FormInputPage.css";
 import Clock from "react-live-clock";
 import InputFormInstansiLuar from "../../components/InputFormInstansiLuar/InputFormInstansiLuar";
 import BanyuasinBangkit from "../../assets/icons/BanyuasinBangkit.png";
@@ -72,6 +72,7 @@ const FormTamuInstansiLuar = () => {
       <Content>
         <Layout>
           <Sider
+            className="slider-content"
             width={300}
             style={{
               height: "100%",

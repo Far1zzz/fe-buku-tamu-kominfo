@@ -1,6 +1,6 @@
 import { Layout, Menu } from "antd";
 import React from "react";
-import "../../assets/css/FormInstansiLuar.css";
+import "../../assets/css/FormInputPage.css";
 import Clock from "react-live-clock";
 import BanyuasinBangkit from "../../assets/icons/BanyuasinBangkit.png";
 import Gerakan from "../../assets/icons/12gerakan.png";
@@ -50,14 +50,7 @@ const FormTamuPemkab = () => {
 
   return (
     <Layout style={{ color: "white" }}>
-      <Header
-        style={{
-          color: "white",
-          boxShadow: "0px 4px 4px #ffffff",
-          background:
-            "radial-gradient(96.83% 12280.84% at 3.17% 50%, #AE1D1D 0%, #4E2222 100%)",
-        }}
-      >
+      <Header>
         <div className="header-buku-tamu">
           <div className="title-header">
             <h5>E-Buku</h5>

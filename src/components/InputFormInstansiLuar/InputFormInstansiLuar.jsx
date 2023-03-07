@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../assets/css/InputFormUmum.css";
+import "../../assets/css/InputForm.css";
 import FormUmum from "../FormUmum/FormUmum";
 import WebcamUmum from "../WebcamUmum/WebcamUmum";
 
@@ -38,8 +38,8 @@ const InputFormInstansiLuar = () => {
         </div>
         <div className="body mt-3">{DisplayPage()}</div>
         <div className="footer">
-          <div className="button-prev">
-            {page === FormTitle.length + 1 ? null : (
+          {page === 0 ? null : (
+            <div className="button-prev">
               <button
                 onClick={() => {
                   setPage((page) => page - 1);
@@ -47,8 +47,9 @@ const InputFormInstansiLuar = () => {
               >
                 Prev
               </button>
-            )}
-          </div>
+            </div>
+          )}
+
           <div className="button-next-submit">
             <button
               onClick={(e) => {
