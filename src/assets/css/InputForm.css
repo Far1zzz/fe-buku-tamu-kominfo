@@ -100,6 +100,12 @@
   border: none;
   font-size: 14px;
 }
+.input-umum,
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 .input-umum :focus {
   outline: 0;
