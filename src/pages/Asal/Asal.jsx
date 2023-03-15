@@ -21,7 +21,7 @@ const Dashboard = () => {
           className="instansi-luar"
           onClick={(e) => {
             e.preventDefault();
-            navigate("/instansi-luar/umum");
+            navigate("/instansi-luar-umum");
           }}
         >
           <button>Instansi Luar/Umum</button>

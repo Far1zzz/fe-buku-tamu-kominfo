@@ -16,12 +16,19 @@
 }
 
 .header-input-umum {
-  margin-left: 85px;
+  margin-left: 115px;
   font-size: 25px;
   font-weight: 500;
   display: flex;
+  width: 50%;
   align-items: center;
-  gap: 5px;
+  position: relative;
+}
+
+.header-input-umum i {
+  position: absolute;
+  left: -35px;
+  font-size: 35px;
 }
 
 .footer {

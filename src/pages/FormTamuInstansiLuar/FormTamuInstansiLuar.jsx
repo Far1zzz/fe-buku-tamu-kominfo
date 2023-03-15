@@ -50,14 +50,7 @@ const FormTamuInstansiLuar = () => {
 
   return (
     <Layout style={{ color: "white" }}>
-      <Header
-        style={{
-          color: "white",
-          boxShadow: "0px 4px 4px #ffffff",
-          background:
-            "radial-gradient(96.83% 12280.84% at 3.17% 50%, #AE1D1D 0%, #4E2222 100%)",
-        }}
-      >
+      <Header>
         <div className="header-buku-tamu">
           <div className="title-header">
             <h5>E-Buku</h5>

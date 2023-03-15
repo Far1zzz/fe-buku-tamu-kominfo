@@ -17,7 +17,8 @@ const InputFormInstansiLuar = () => {
     jabatan: "",
     keperluan: "",
     detail_Keperluan: "",
-    jumlahTamu: "",
+    jumlahTamu: 1,
+    detailTamu: "",
     tujuan: "",
   });
 
@@ -34,7 +35,7 @@ const InputFormInstansiLuar = () => {
       <div className="form-input-umum">
         <div className="header-input-umum">
           <i class="bi bi-list"></i>
-          {FormTitle[page]}
+          <div>{FormTitle[page]}</div>
         </div>
         <div className="body mt-3">{DisplayPage()}</div>
         <div className="footer">

@@ -5,6 +5,7 @@ const FormPemkab = ({ formData, setFormData }) => {
   const [showHide, setShowHide] = useState("");
   const [hideKeperluan, setHideKeperluan] = useState("");
   const [hideStatus, setHideStatus] = useState("");
+  const [hideDetailTamu, setHideDetailTamu] = useState("");
 
   return (
     <>
@@ -421,16 +422,22 @@ const FormPemkab = ({ formData, setFormData }) => {
                     ...formData,
                     jumlahTamu: e.target.value,
                   });
+                  setHideDetailTamu(e.target.value);
                 }}
               />
             </div>
 
-            <label htmlFor="">
-              Silahkan Isi Nama<small>*(Wajib Diisi)</small>
-            </label>
-            <div className="input-umum-more">
-              <textarea type="text" />
-            </div>
+            {hideDetailTamu > 1 && (
+              <>
+                {" "}
+                <label htmlFor="">
+                  Silahkan Isi Nama<small>*(Wajib Diisi)</small>
+                </label>
+                <div className="input-umum-more">
+                  <textarea type="text" />
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>

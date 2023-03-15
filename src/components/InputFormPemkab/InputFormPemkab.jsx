@@ -17,7 +17,8 @@ const InputFormPemkab = () => {
     jabatan: "",
     keperluan: "",
     detail_Keperluan: "",
-    jumlahTamu: "",
+    jumlahTamu: 1,
+    detailTamu: "",
     tujuan: "",
   });
 
@@ -60,7 +61,13 @@ const InputFormPemkab = () => {
                 }
               }}
             >
-              {page === FormTitle.length - 1 ? "Submit" : "Next"}
+              {page === FormTitle.length - 1 ? (
+                "Submit"
+              ) : (
+                <>
+                  Next<i class="bi bi-arrow-bar-right"></i>
+                </>
+              )}
             </button>
           </div>
         </div>

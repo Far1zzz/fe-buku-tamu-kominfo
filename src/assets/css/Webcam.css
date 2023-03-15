@@ -1,7 +1,6 @@
 .webcam-form {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   width: 85%;
   height: 100%;
@@ -16,18 +15,25 @@
 
 .button-webcam {
   border: 2px solid white;
-  padding: 10px;
-  border-radius: 15px;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .button-webcam button {
   border: none;
-  border-radius: 10px;
-  width: 100px;
+  width: 50px;
+  border-radius: 5px;
+  height: 35px;
   padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   background-color: aqua;
+}
+
+.webcam-btn i {
+  position: absolute;
+  font-weight: bold;
+  font-size: 30px;
 }

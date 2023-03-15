@@ -1,6 +1,6 @@
 import React, { useCallback, useRef, useState } from "react";
 import Webcam from "react-webcam";
-import "../../assets/css/WebcamUmum.css";
+import "../../assets/css/Webcam.css";
 
 const videoConstraints = {
   width: "100%",
@@ -56,7 +56,8 @@ const WebcamUmum = ({ formData, setFormData }) => {
               }}
               className="webcam-btn"
             >
-              <i class="bi bi-camera"></i> Ambil Ulang
+              <i class="bi bi-arrow-repeat"></i>
+              <i class="bi bi-camera"></i>
             </button>
           ) : (
             <button
@@ -66,7 +67,7 @@ const WebcamUmum = ({ formData, setFormData }) => {
               }}
               className="webcam-btn"
             >
-              <i class="bi bi-camera"></i> Ambil
+              <i class="bi bi-camera"></i>
             </button>
           )}
           {preview ? (
